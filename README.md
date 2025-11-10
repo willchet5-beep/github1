@@ -17,9 +17,10 @@ Le service web interne de l'application écoute sur le port **80** du conteneur.
 
 ---
 
-## 🛠️ Exécution de l'Application avec Docker (Tous OS)
+## 🛠️ Exécution de l'Application avec Docker (Linux ,Mac , Windows)
 
 Pour démarrer l'application, suivez les étapes ci-dessous. Elles sont **identiques** sur Linux, Windows et macOS, à condition que Docker soit installé.
+
 
 ### 1. Construire l'Image Docker
 
@@ -27,3 +28,10 @@ Naviguez jusqu'au répertoire racine du projet (contenant le `Dockerfile`) et ex
 
 ```bash
 docker build -t webapp .
+
+### 2. Exécution du Conteneur 
+```bash
+docker run -d -p 8080:80 --name webgit webapp 
+```bash
+http://your_ip_adress:8080 
+
